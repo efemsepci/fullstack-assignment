@@ -1,7 +1,10 @@
 const express = require("express");
+const cors = require("cors");
 const fs = require("fs");
 const app = express();
 const port = process.env.PORT || 5000;
+
+app.use(cors());
 
 const getData = () => {
   const data = fs.readFileSync("../products.json");
@@ -25,12 +28,5 @@ app.get("/products", (req, res) => {
 
   res.json(products);
 });
-
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  next();
-})
 
 app.listen(port, () => console.log("server started..."));
