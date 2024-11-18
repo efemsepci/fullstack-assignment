@@ -26,4 +26,11 @@ app.get("/products", (req, res) => {
   res.json(products);
 });
 
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+  next();
+})
+
 app.listen(port, () => console.log("server started..."));
