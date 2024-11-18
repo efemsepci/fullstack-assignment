@@ -10,7 +10,7 @@ function App() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("https://fullstack-assignment-ygbn.onrender.com//products");
+        const response = await axios.get("https://fullstack-assignment-ygbn.onrender.com/products");
         setProducts(response.data);
       } catch (error) {
         console.error(error);
