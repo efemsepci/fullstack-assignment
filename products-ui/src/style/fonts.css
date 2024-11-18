@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Avenir-Book';
+    src: url('../fonts/Avenir/Avenir-Book.ttf');
+}
+
+.title{
+    font-family: 'Avenir-Book';
+    font-size: 45;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('../fonts/Montserrat/Montserrat-Medium.otf');
+}
+
+.productTitle{
+    font-family: 'Montserrat-Medium';
+    font-size: 15;
+    font-weight: normal;
+    text-align: left;
+    margin-top: 25px;
+}
+
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+.productPrice{
+    font-family: 'Montserrat-Regular';
+    font-size: 15;
+    font-weight: normal;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.colorOption{
+    font-family: 'Avenir-Book';
+    font-size: 12;
+    font-weight: normal;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.ratingText{
+    font-family: 'Avenir-Book';
+    font-size: 14;
+    font-weight: normal;
+    text-align: left;
+}
