@@ -1,6 +1,7 @@
 const express = require("express");
 const fs = require("fs");
 const app = express();
+const port = process.env.PORT || 5000;
 
 const getData = () => {
   const data = fs.readFileSync("../products.json");
@@ -25,4 +26,4 @@ app.get("/products", (req, res) => {
   res.json(products);
 });
 
-app.listen(5000, () => console.log("server started..."));
+app.listen(port, () => console.log("server started..."));
